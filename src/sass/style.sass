@@ -6,10 +6,176 @@
 @import "fonts"
 
 /* General Styles */
+$base: white
+$accentg0: black
+$accentg1: $darkgray
+$accentg2: $lightgray
+$accentc0: $blue
+$accentc1: $red
 
-// body
+$bp1: 1200px
+$bp2: 1000px
+$bp3: 800px
+$bp4: 600px
+$bp5: 400px
 
-// .container
+body
+	font-size: 18px
+	@media(max-width: $bp1)
+		font-size: 16px
+	@media(max-width: $bp2)
+		font-size: 14px
+	@media(max-width: $bp3)
+		font-size: 14px
+	@media(max-width: $bp4)
+		font-size: 12px
+	@media(max-width: $bp5)
+		font-size: 12px
+
+h1,h2,h3,h4,h5,h6
+	font-family: $sspro
+p, a
+	font-family: $sspro
+.container
+	.barChart
+		margin: 2em 0
+		.rowWrapper
+			width: 80%
+			height: 13em
+			margin: 0 auto
+			padding: 2em 0
+			@media(max-width: $bp3)
+				width: 90%
+			@media(max-width: $bp4)
+				width: 95%
+			&:first-child
+				padding: 0
+				height: 5em
+			&:nth-child(n+2):not(:last-child)	
+				border-bottom: .1em solid $accentg1 
+			.headshotWrapper
+				display: inline-block
+				position: relative
+				width: 6em
+				height: 100%
+				margin-right: .5em
+				img.headshot
+					@include verticalAlignMiddle(50%)
+					width: 100%
+				@media(max-width: $bp4)
+					display: none
+			.legend
+				display: inline-block
+				width: 60%
+				.legendItem
+					position: relative
+					margin-bottom: .5em
+					.bar
+						display: inline-block
+						width: 2em
+						height: 2em
+						&--votes
+							background-color: $accentc0
+						&--money
+							background-color: $accentc1
+					p
+						@include verticalAlignMiddle(50%)
+						display: inline-block
+						width: 100%
+						margin: 0 0 0 .5em
+						font-weight: bold
+						font-size: 1em
+						color: $accentg1
+			.barsWrapper
+				display: inline-block
+				vertical-align: top
+				width: 60%
+				height: 100%
+				@media(max-width: $bp4)
+					width: 70%
+				p.candidateName
+					width: 7em
+					margin: 0 1em 0 0
+					font-size: 2em
+					font-weight: bold
+					color: $accentg1
+				.bars
+					.bar
+						position: relative
+						height: 2em
+						margin: .5em 0
+						p
+							@include verticalAlignMiddle(50%)
+							width: 100%
+							margin: 0
+							padding-right: .3em
+							text-align: right
+							font-size: 1em
+							font-weight: bold
+							color: white
+						&--votes
+							background-color: $accentc0
+						&--money
+							background-color: $accentc1
+					&--dixon
+						.bar							
+							&--votes
+								width: 100%
+							&--money
+								width: 38%
+					&--pugh
+						.bar							
+							&--votes
+								width: 70%
+							&--money
+								width: 46%
+					&--stokes
+						.bar							
+							&--votes
+								width: 60%
+							&--money
+								width: 13%
+								p
+									@media(max-width: $bp4)
+										left: 3.5em
+										color: $accentg0
+					&--warnock
+						.bar							
+							&--votes
+								width: 50%
+							&--money
+								width: 100%
+					&--embry
+						.bar							
+							&--votes
+								width: 40%
+							&--money
+								width: 17%
+								p
+									@media(max-width: $bp4)
+										left: 3.5em
+										color: $accentg0
+			.dollarsPerVote
+				display: inline-block
+				position: relative
+				float: right
+				margin: 0 auto
+				width: 20%
+				height: 100%
+				@media(max-width: $bp4)
+					width: 25%
+				p
+					@include verticalAlignMiddle(50%)
+					width: 100%
+					margin: 0 auto
+					color: $accentg1
+					font-size: 3em
+					line-height: .5em
+					font-weight: bold
+					text-align: center
+					span
+						font-size: .5em
+						line-height: .5em
 
 /* Tophat */
 #tophat

@@ -20,4 +20,24 @@
 	line-height: ($size - ($border * 2))
 	text-align: center
 
+=ghostVerticalAlign
+	&:before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		width: .1px
+		height: 100%
 
+=verticalAlignMiddle($percentTop)
+	position: absolute
+	top: $percentTop
+	-webkit-transform: translateY($percentTop*-1)
+	-ms-transform: translateY($percentTop*-1)
+	transform: translateY($percentTop*-1)
+
+=verticalAlignMiddleRel($percentTop)
+	position: relative
+	top: $percentTop
+	-webkit-transform: translateY($percentTop*-1)
+	-ms-transform: translateY($percentTop*-1)
+	transform: translateY($percentTop*-1)

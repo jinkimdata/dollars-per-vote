@@ -15,14 +15,14 @@ html(class="no-js", lang="en")
 		meta(charset="utf-8")
 		title
 		meta(name="description", content="")
-		meta(name="author", content="")
+		meta(name="author", content="Jin Bae Kim")
 
-		//Mobile Specific Metas
+		//Mobile Specific metas
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		//CSS
 		link(rel="stylesheet", type="text/css", href="#{datalink}css/style.css")
 		//Fonts
-		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Old+Standard+TT|Lato|Montserrat")
+		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Old+Standard+TT|Lato|Montserrat|Source+Sans+Pro")
 
 		//Facebook Stuff
 		meta(property="og:title", content="")
@@ -47,9 +47,95 @@ html(class="no-js", lang="en")
 				a(href="http://www.baltimoresun.com")
 					img(src="images/baltimore-sun-logo.png" border="0")
 			.tophat-share-tools
+				br
 				span.icon-facebook
+				br
 				span.icon-twitter
 		.container
+
+			.barChart
+				.rowWrapper
+					.headshotWrapper
+					.legend
+						.legendItem
+							.bar.bar--votes
+							p Votes
+						.legendItem
+							.bar.bar--money
+							p Dollars raised
+				.rowWrapper
+					.headshotWrapper
+						img.headshot(src="#{datalink}/images/dixon.png")				
+					.barsWrapper
+						p.candidateName Sheila Dixon
+						.bars.bars--dixon
+							.bar.bar--votes
+								p 500,000 votes
+							.bar.bar--money
+								p $0.9m
+					.dollarsPerVote
+						p $62
+							br
+							span per vote
+				.rowWrapper
+					.headshotWrapper
+						img.headshot(src="#{datalink}/images/dixon.png")
+					.barsWrapper
+						p.candidateName Catherine Pugh
+						.bars.bars--pugh
+							.bar.bar--votes
+								p 500,000 votes
+							.bar.bar--money
+								p $1.1m
+					.dollarsPerVote
+						p $62
+							br
+							span per vote
+				.rowWrapper
+					.headshotWrapper
+						img.headshot(src="#{datalink}/images/dixon.png")
+					.barsWrapper
+						p.candidateName Carl Stokes
+						.bars.bars--stokes
+							.bar.bar--votes
+								p 500,000 votes
+							.bar.bar--money
+								p $0.3m
+					.dollarsPerVote
+						p $62
+							br
+							span per vote
+				.rowWrapper
+					.headshotWrapper
+						img.headshot(src="#{datalink}/images/dixon.png")
+					.barsWrapper
+						p.candidateName David Warnock
+						.bars.bars--warnock
+							.bar.bar--votes
+								p 500,000 votes
+							.bar.bar--money
+								p $2.4m
+					.dollarsPerVote
+						p $62
+							br
+							span per vote
+				.rowWrapper
+					.headshotWrapper
+						img.headshot(src="#{datalink}/images/dixon.png")
+					.barsWrapper
+						p.candidateName Elizabeth Embry
+						.bars.bars--embry
+							.bar.bar--votes
+								p 500,000 votes
+							.bar.bar--money
+								p $0.4m
+					.dollarsPerVote
+						p $62
+							br
+							span per vote
+			
+
+
 
 		//- #leaderboard			
 		//- 	include includes/ad-for-body.html
