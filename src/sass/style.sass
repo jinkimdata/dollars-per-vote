@@ -1,8 +1,8 @@
 @import "mixins"
 @import "variables"
-@import "bourbon/bourbon"
-@import "neat/neat"
-@import "normalize"
+// @import "bourbon/bourbon"
+// @import "neat/neat"
+// @import "normalize"
 @import "fonts"
 
 /* General Styles */
@@ -21,6 +21,9 @@ $bp5: 400px
 
 
 #appContainer.container
+	box-sizing: border-box
+	*, *::after, *::before
+		box-sizing: inherit
 	font-size: 18px
 	@media(max-width: $bp1)
 		font-size: 16px
@@ -37,9 +40,9 @@ $bp5: 400px
 	p, a
 		font-family: $sspro
 	width: 100%
-	max-width: 1200px
 	margin: 0 auto
 	.barChart
+		max-width: 1200px
 		.rowWrapper
 			height: 11em
 			margin: 0 auto
