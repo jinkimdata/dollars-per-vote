@@ -19,7 +19,8 @@ $bp3: 800px
 $bp4: 600px
 $bp5: 400px
 
-body
+
+#appContainer.container
 	font-size: 18px
 	@media(max-width: $bp1)
 		font-size: 16px
@@ -31,24 +32,18 @@ body
 		font-size: 12px
 	@media(max-width: $bp5)
 		font-size: 12px
-
-h1,h2,h3,h4,h5,h6
-	font-family: $sspro
-p, a
-	font-family: $sspro
-.container
-	width: 80%
+	h1,h2,h3,h4,h5,h6
+		font-family: $sspro
+	p, a
+		font-family: $sspro
+	width: 100%
 	max-width: 1200px
 	margin: 0 auto
-	@media(max-width: $bp3)
-		width: 90%
-	@media(max-width: $bp4)
-		width: 95%
 	.barChart
 		.rowWrapper
 			height: 11em
 			margin: 0 auto
-			padding: 1em 0
+			padding: 1.5em 0
 			&:first-child
 				padding: 0
 				height: 5em
@@ -139,7 +134,7 @@ p, a
 								p
 									@media(max-width: $bp4)
 										left: 3.5em
-										color: $accentg0
+										color: $accentg1
 					&--warnock
 						.bar							
 							&--votes
@@ -155,7 +150,7 @@ p, a
 								p
 									@media(max-width: $bp4)
 										left: 3.5em
-										color: $accentg0
+										color: $accentg1
 			.dollarsPerVote
 				display: inline-block
 				position: relative

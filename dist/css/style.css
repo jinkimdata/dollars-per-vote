@@ -462,56 +462,46 @@ th {
   content: "\e615"; }
 
 /* General Styles */
-body {
-  font-size: 18px; }
-  @media (max-width: 1200px) {
-    body {
-      font-size: 16px; } }
-  @media (max-width: 1000px) {
-    body {
-      font-size: 14px; } }
-  @media (max-width: 800px) {
-    body {
-      font-size: 14px; } }
-  @media (max-width: 600px) {
-    body {
-      font-size: 12px; } }
-  @media (max-width: 400px) {
-    body {
-      font-size: 12px; } }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", sans-serif; }
-
-p, a {
-  font-family: "Source Sans Pro", sans-serif; }
-
-.container {
-  width: 80%;
+#appContainer.container {
+  font-size: 18px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto; }
+  @media (max-width: 1200px) {
+    #appContainer.container {
+      font-size: 16px; } }
+  @media (max-width: 1000px) {
+    #appContainer.container {
+      font-size: 14px; } }
   @media (max-width: 800px) {
-    .container {
-      width: 90%; } }
+    #appContainer.container {
+      font-size: 14px; } }
   @media (max-width: 600px) {
-    .container {
-      width: 95%; } }
-  .container .barChart .rowWrapper {
+    #appContainer.container {
+      font-size: 12px; } }
+  @media (max-width: 400px) {
+    #appContainer.container {
+      font-size: 12px; } }
+  #appContainer.container h1, #appContainer.container h2, #appContainer.container h3, #appContainer.container h4, #appContainer.container h5, #appContainer.container h6 {
+    font-family: "Source Sans Pro", sans-serif; }
+  #appContainer.container p, #appContainer.container a {
+    font-family: "Source Sans Pro", sans-serif; }
+  #appContainer.container .barChart .rowWrapper {
     height: 11em;
     margin: 0 auto;
-    padding: 1em 0; }
-    .container .barChart .rowWrapper:first-child {
+    padding: 1.5em 0; }
+    #appContainer.container .barChart .rowWrapper:first-child {
       padding: 0;
       height: 5em; }
-    .container .barChart .rowWrapper:nth-child(n+2):nth-child(-n+5) {
+    #appContainer.container .barChart .rowWrapper:nth-child(n+2):nth-child(-n+5) {
       border-bottom: 0.1em solid #667682; }
-    .container .barChart .rowWrapper .headshotWrapper {
+    #appContainer.container .barChart .rowWrapper .headshotWrapper {
       display: inline-block;
       position: relative;
       width: 6em;
       height: 100%;
       margin-right: .5em; }
-      .container .barChart .rowWrapper .headshotWrapper img.headshot {
+      #appContainer.container .barChart .rowWrapper .headshotWrapper img.headshot {
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -519,23 +509,23 @@ p, a {
         transform: translateY(-50%);
         width: 100%; }
       @media (max-width: 600px) {
-        .container .barChart .rowWrapper .headshotWrapper {
+        #appContainer.container .barChart .rowWrapper .headshotWrapper {
           display: none; } }
-    .container .barChart .rowWrapper .legend {
+    #appContainer.container .barChart .rowWrapper .legend {
       display: inline-block;
       width: 60%; }
-      .container .barChart .rowWrapper .legend .legendItem {
+      #appContainer.container .barChart .rowWrapper .legend .legendItem {
         position: relative;
         margin-bottom: .2em; }
-        .container .barChart .rowWrapper .legend .legendItem .bar {
+        #appContainer.container .barChart .rowWrapper .legend .legendItem .bar {
           display: inline-block;
           width: 2em;
           height: 2em; }
-          .container .barChart .rowWrapper .legend .legendItem .bar--votes {
+          #appContainer.container .barChart .rowWrapper .legend .legendItem .bar--votes {
             background-color: #2E98CC; }
-          .container .barChart .rowWrapper .legend .legendItem .bar--money {
+          #appContainer.container .barChart .rowWrapper .legend .legendItem .bar--money {
             background-color: #ED4227; }
-        .container .barChart .rowWrapper .legend .legendItem p {
+        #appContainer.container .barChart .rowWrapper .legend .legendItem p {
           position: absolute;
           top: 50%;
           -webkit-transform: translateY(-50%);
@@ -547,25 +537,25 @@ p, a {
           font-weight: bold;
           font-size: 1em;
           color: #667682; }
-    .container .barChart .rowWrapper .barsWrapper {
+    #appContainer.container .barChart .rowWrapper .barsWrapper {
       display: inline-block;
       vertical-align: top;
       width: 60%;
       height: 100%; }
       @media (max-width: 600px) {
-        .container .barChart .rowWrapper .barsWrapper {
+        #appContainer.container .barChart .rowWrapper .barsWrapper {
           width: 70%; } }
-      .container .barChart .rowWrapper .barsWrapper p.candidateName {
+      #appContainer.container .barChart .rowWrapper .barsWrapper p.candidateName {
         width: 7em;
         margin: 0 1em 0 0;
         font-size: 2em;
         font-weight: bold;
         color: #667682; }
-      .container .barChart .rowWrapper .barsWrapper .bars .bar {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars .bar {
         position: relative;
         height: 2em;
         margin: .5em 0; }
-        .container .barChart .rowWrapper .barsWrapper .bars .bar p {
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars .bar p {
           position: absolute;
           top: 50%;
           -webkit-transform: translateY(-50%);
@@ -578,39 +568,39 @@ p, a {
           font-size: 1em;
           font-weight: bold;
           color: white; }
-        .container .barChart .rowWrapper .barsWrapper .bars .bar--votes {
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars .bar--votes {
           background-color: #2E98CC; }
-        .container .barChart .rowWrapper .barsWrapper .bars .bar--money {
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars .bar--money {
           background-color: #ED4227; }
-      .container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--votes {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--votes {
         width: 100%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--money {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--money {
         width: 38%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--votes {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--votes {
         width: 70%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--money {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--money {
         width: 46%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--votes {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--votes {
         width: 60%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money {
         width: 13%; }
         @media (max-width: 600px) {
-          .container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money p {
+          #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money p {
             left: 3.5em;
-            color: black; } }
-      .container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--votes {
+            color: #667682; } }
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--votes {
         width: 50%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--money {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--money {
         width: 100%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes {
         width: 40%; }
-      .container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money {
+      #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money {
         width: 17%; }
         @media (max-width: 600px) {
-          .container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money p {
+          #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money p {
             left: 3.5em;
-            color: black; } }
-    .container .barChart .rowWrapper .dollarsPerVote {
+            color: #667682; } }
+    #appContainer.container .barChart .rowWrapper .dollarsPerVote {
       display: inline-block;
       position: relative;
       float: right;
@@ -618,9 +608,9 @@ p, a {
       width: 20%;
       height: 100%; }
       @media (max-width: 600px) {
-        .container .barChart .rowWrapper .dollarsPerVote {
+        #appContainer.container .barChart .rowWrapper .dollarsPerVote {
           width: 25%; } }
-      .container .barChart .rowWrapper .dollarsPerVote p {
+      #appContainer.container .barChart .rowWrapper .dollarsPerVote p {
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -633,10 +623,10 @@ p, a {
         line-height: .5em;
         font-weight: bold;
         text-align: center; }
-        .container .barChart .rowWrapper .dollarsPerVote p span {
+        #appContainer.container .barChart .rowWrapper .dollarsPerVote p span {
           font-size: .5em;
           line-height: .5em; }
-  .container .barChart p.disclaimer {
+  #appContainer.container .barChart p.disclaimer {
     color: #667682; }
 
 /* Tophat */

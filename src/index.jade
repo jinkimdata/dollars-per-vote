@@ -1,150 +1,89 @@
-//- include 
-- var datalink = "http://data.baltimoresun.com/jin/dollars-per-vote-temp/"
-// - var datalink = ""
+- var datalink = "http://data.baltimoresun.com/jin/dollars-per-vote/"
+//- var datalink = ""
 
-doctype html
-//if lt IE 7
-	<html class="no-js lt-ie9 lt-ie8 lt-ie7">
-//if IE 7
-	<html class="no-js lt-ie9 lt-ie8">
-//if IE 8
-	<html class="no-js lt-ie9">
-html(class="no-js", lang="en")
-	head
-		//Basic page needs
-		meta(charset="utf-8")
-		title
-		meta(name="description", content="")
-		meta(name="author", content="Jin Bae Kim")
-
-		//Mobile Specific metas
-		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-		//CSS
-		link(rel="stylesheet", type="text/css", href="#{datalink}css/style.css")
-		//Fonts
-		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Old+Standard+TT|Lato|Montserrat|Source+Sans+Pro")
-
-		//- //Facebook Stuff
-		//- meta(property="og:title", content="")
-		//- meta(property="og:url", content="")
-		//- meta(property="og:image", content="")
-		//- meta(property="og:site_name", content="The Baltimore Sun")
-		//- meta(property="og:description", content="")
-		//- meta(property="fb:app_id", content="310302989040998")
-		//- //Twitter Stuff
-		//- meta(name="twitter:card", content="summary")
-		//- meta(name="twitter:site", content="@baltimoresun")
-		//- meta(name="twitter:creator", content="")
-		//- meta(name="twitter:title", content="")
-		//- meta(name="twitter:description", content="")
-		//- meta(name="twitter:image", content="")
-		//- meta(name="twitter:domain", content="baltimoresun.com")
-
-	body
-		//- #tophat
-		//- 	.group
-		//- 	#logo
-		//- 		a(href="http://www.baltimoresun.com")
-		//- 			img(src="images/baltimore-sun-logo.png" border="0")
-		//- 	.tophat-share-tools
-		//- 		br
-		//- 		span.icon-facebook
-		//- 		br
-		//- 		span.icon-twitter
-		.container
-			.barChart
-				.rowWrapper
-					.headshotWrapper
-					.legend
-						.legendItem
-							.bar.bar--votes
-							p Votes
-						.legendItem
-							.bar.bar--money
-							p Dollars raised
-				.rowWrapper
-					.headshotWrapper
-						img.headshot(src="#{datalink}images/dixon.png")
-					.barsWrapper
-						p.candidateName Sheila Dixon
-						.bars.bars--dixon
-							.bar.bar--votes
-								p 500,000 votes
-							.bar.bar--money
-								p $0.9m
-					.dollarsPerVote
-						p $62
-							br
-							span per vote
-				.rowWrapper
-					.headshotWrapper
-						img.headshot(src="#{datalink}images/pugh.png")
-					.barsWrapper
-						p.candidateName Catherine Pugh
-						.bars.bars--pugh
-							.bar.bar--votes
-								p 500,000 votes
-							.bar.bar--money
-								p $1.1m
-					.dollarsPerVote
-						p $62
-							br
-							span per vote
-				.rowWrapper
-					.headshotWrapper
-						img.headshot(src="#{datalink}images/stokes.png")
-					.barsWrapper
-						p.candidateName Carl Stokes
-						.bars.bars--stokes
-							.bar.bar--votes
-								p 500,000 votes
-							.bar.bar--money
-								p $0.3m
-					.dollarsPerVote
-						p $62
-							br
-							span per vote
-				.rowWrapper
-					.headshotWrapper
-						img.headshot(src="#{datalink}images/warnock.png")
-					.barsWrapper
-						p.candidateName David Warnock
-						.bars.bars--warnock
-							.bar.bar--votes
-								p 500,000 votes
-							.bar.bar--money
-								p $2.4m
-					.dollarsPerVote
-						p $62
-							br
-							span per vote
-				.rowWrapper
-					.headshotWrapper
-						img.headshot(src="#{datalink}images/embry.png")
-					.barsWrapper
-						p.candidateName Elizabeth Embry
-						.bars.bars--embry
-							.bar.bar--votes
-								p 500,000 votes
-							.bar.bar--money
-								p $0.4m
-					.dollarsPerVote
-						p $62
-							br
-							span per vote
-				p.disclaimer * Includes the top five mayoral candidates with most votes
-				p.disclaimer ** Campaign finance numbers do not include PAC funds
-
-		//- #leaderboard			
-		//- 	include includes/ad-for-body.html
-		
-		//Javascript
-		script(src="#{datalink}js/min/jquery-1.10.2.min.js")
-		script(src="#{datalink}js/min/modernizr.js")
-		script(src="#{datalink}js/javascript.js")
-		script(src="#{datalink}js/app.js")
-		//- script(src="#{datalink}js/min/app.min.js")
-
-		//- include includes/omniture.html
-		//- include includes/ad-for-header.html
-	
+link(rel="stylesheet", type="text/css", href="#{datalink}css/style.css")
+link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Source+Sans+Pro")
+#appContainer.container
+	p.chatter See how much Baltimore's top mayoral candidates spent per vote.
+	.barChart
+		.rowWrapper
+			.headshotWrapper
+			.legend
+				.legendItem
+					.bar.bar--votes
+					p Votes
+				.legendItem
+					.bar.bar--money
+					p Dollars spent
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/dixon.png")
+			.barsWrapper
+				p.candidateName Sheila Dixon
+				.bars.bars--dixon
+					.bar.bar--votes
+						p 500,000 votes
+					.bar.bar--money
+						p $0.9m
+			.dollarsPerVote
+				p $62
+					br
+					span per vote
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/pugh.png")
+			.barsWrapper
+				p.candidateName Catherine Pugh
+				.bars.bars--pugh
+					.bar.bar--votes
+						p 500,000 votes
+					.bar.bar--money
+						p $1.1m
+			.dollarsPerVote
+				p $62
+					br
+					span per vote
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/stokes.png")
+			.barsWrapper
+				p.candidateName Carl Stokes
+				.bars.bars--stokes
+					.bar.bar--votes
+						p 500,000 votes
+					.bar.bar--money
+						p $0.3m
+			.dollarsPerVote
+				p $62
+					br
+					span per vote
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/warnock.png")
+			.barsWrapper
+				p.candidateName David Warnock
+				.bars.bars--warnock
+					.bar.bar--votes
+						p 500,000 votes
+					.bar.bar--money
+						p $2.4m
+			.dollarsPerVote
+				p $62
+					br
+					span per vote
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/embry.png")
+			.barsWrapper
+				p.candidateName Elizabeth Embry
+				.bars.bars--embry
+					.bar.bar--votes
+						p 500,000 votes
+					.bar.bar--money
+						p $0.4m
+			.dollarsPerVote
+				p $62
+					br
+					span per vote
+		p.disclaimer * Includes the top five mayoral candidates with most votes
+		p.disclaimer ** Campaign finance numbers do not include PAC funds

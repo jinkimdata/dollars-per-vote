@@ -1,134 +1,108 @@
 
-<!-- - var datalink = ""--><!DOCTYPE html>
-<!--if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7">
--->
-<!--if IE 7<html class="no-js lt-ie9 lt-ie8">
--->
-<!--if IE 8<html class="no-js lt-ie9">
--->
-<html lang="en" class="no-js">
-  <head>
-    <!--Basic page needs-->
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="author" content="Jin Bae Kim">
-    <!--Mobile Specific metas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/jin/dollars-per-vote-temp/css/style.css">
-    <!--Fonts-->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Old+Standard+TT|Lato|Montserrat|Source+Sans+Pro">
-  </head>
-  <body>
-    <div class="container">
-      <div class="barChart">
-        <div class="rowWrapper">
-          <div class="headshotWrapper"></div>
-          <div class="legend">
-            <div class="legendItem">
-              <div class="bar bar--votes"></div>
-              <p>Votes</p>
-            </div>
-            <div class="legendItem">
-              <div class="bar bar--money"></div>
-              <p>Dollars raised</p>
-            </div>
-          </div>
+<link rel="stylesheet" type="text/css" href="http://data.baltimoresun.com/jin/dollars-per-vote/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro"/>
+<div id="appContainer" class="container">
+  <p class="chatter">See how much Baltimore's top mayoral candidates spent per vote.</p>
+  <div class="barChart">
+    <div class="rowWrapper">
+      <div class="headshotWrapper"></div>
+      <div class="legend">
+        <div class="legendItem">
+          <div class="bar bar--votes"></div>
+          <p>Votes</p>
         </div>
-        <div class="rowWrapper">
-          <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/images/dixon.png" class="headshot"></div>
-          <div class="barsWrapper">
-            <p class="candidateName">Sheila Dixon</p>
-            <div class="bars bars--dixon">
-              <div class="bar bar--votes">
-                <p>500,000 votes</p>
-              </div>
-              <div class="bar bar--money">
-                <p>$0.9m</p>
-              </div>
-            </div>
-          </div>
-          <div class="dollarsPerVote">
-            <p>$62<br><span>per vote</span></p>
-          </div>
+        <div class="legendItem">
+          <div class="bar bar--money"></div>
+          <p>Dollars spent</p>
         </div>
-        <div class="rowWrapper">
-          <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/images/pugh.png" class="headshot"></div>
-          <div class="barsWrapper">
-            <p class="candidateName">Catherine Pugh</p>
-            <div class="bars bars--pugh">
-              <div class="bar bar--votes">
-                <p>500,000 votes</p>
-              </div>
-              <div class="bar bar--money">
-                <p>$1.1m</p>
-              </div>
-            </div>
-          </div>
-          <div class="dollarsPerVote">
-            <p>$62<br><span>per vote</span></p>
-          </div>
-        </div>
-        <div class="rowWrapper">
-          <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/images/stokes.png" class="headshot"></div>
-          <div class="barsWrapper">
-            <p class="candidateName">Carl Stokes</p>
-            <div class="bars bars--stokes">
-              <div class="bar bar--votes">
-                <p>500,000 votes</p>
-              </div>
-              <div class="bar bar--money">
-                <p>$0.3m</p>
-              </div>
-            </div>
-          </div>
-          <div class="dollarsPerVote">
-            <p>$62<br><span>per vote</span></p>
-          </div>
-        </div>
-        <div class="rowWrapper">
-          <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/images/warnock.png" class="headshot"></div>
-          <div class="barsWrapper">
-            <p class="candidateName">David Warnock</p>
-            <div class="bars bars--warnock">
-              <div class="bar bar--votes">
-                <p>500,000 votes</p>
-              </div>
-              <div class="bar bar--money">
-                <p>$2.4m</p>
-              </div>
-            </div>
-          </div>
-          <div class="dollarsPerVote">
-            <p>$62<br><span>per vote</span></p>
-          </div>
-        </div>
-        <div class="rowWrapper">
-          <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/images/embry.png" class="headshot"></div>
-          <div class="barsWrapper">
-            <p class="candidateName">Elizabeth Embry</p>
-            <div class="bars bars--embry">
-              <div class="bar bar--votes">
-                <p>500,000 votes</p>
-              </div>
-              <div class="bar bar--money">
-                <p>$0.4m</p>
-              </div>
-            </div>
-          </div>
-          <div class="dollarsPerVote">
-            <p>$62<br><span>per vote</span></p>
-          </div>
-        </div>
-        <p class="disclaimer">* Includes the top five mayoral candidates with most votes</p>
-        <p class="disclaimer">** Campaign finance numbers do not include PAC funds</p>
       </div>
     </div>
-    <!--Javascript-->
-    <script src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/js/min/jquery-1.10.2.min.js"></script>
-    <script src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/js/min/modernizr.js"></script>
-    <script src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/js/javascript.js"></script>
-    <script src="http://data.baltimoresun.com/jin/dollars-per-vote-temp/js/app.js"></script>
-  </body>
-</html>
+    <div class="rowWrapper">
+      <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote/images/dixon.png" class="headshot"/></div>
+      <div class="barsWrapper">
+        <p class="candidateName">Sheila Dixon</p>
+        <div class="bars bars--dixon">
+          <div class="bar bar--votes">
+            <p>500,000 votes</p>
+          </div>
+          <div class="bar bar--money">
+            <p>$0.9m</p>
+          </div>
+        </div>
+      </div>
+      <div class="dollarsPerVote">
+        <p>$62<br/><span>per vote</span></p>
+      </div>
+    </div>
+    <div class="rowWrapper">
+      <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote/images/pugh.png" class="headshot"/></div>
+      <div class="barsWrapper">
+        <p class="candidateName">Catherine Pugh</p>
+        <div class="bars bars--pugh">
+          <div class="bar bar--votes">
+            <p>500,000 votes</p>
+          </div>
+          <div class="bar bar--money">
+            <p>$1.1m</p>
+          </div>
+        </div>
+      </div>
+      <div class="dollarsPerVote">
+        <p>$62<br/><span>per vote</span></p>
+      </div>
+    </div>
+    <div class="rowWrapper">
+      <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote/images/stokes.png" class="headshot"/></div>
+      <div class="barsWrapper">
+        <p class="candidateName">Carl Stokes</p>
+        <div class="bars bars--stokes">
+          <div class="bar bar--votes">
+            <p>500,000 votes</p>
+          </div>
+          <div class="bar bar--money">
+            <p>$0.3m</p>
+          </div>
+        </div>
+      </div>
+      <div class="dollarsPerVote">
+        <p>$62<br/><span>per vote</span></p>
+      </div>
+    </div>
+    <div class="rowWrapper">
+      <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote/images/warnock.png" class="headshot"/></div>
+      <div class="barsWrapper">
+        <p class="candidateName">David Warnock</p>
+        <div class="bars bars--warnock">
+          <div class="bar bar--votes">
+            <p>500,000 votes</p>
+          </div>
+          <div class="bar bar--money">
+            <p>$2.4m</p>
+          </div>
+        </div>
+      </div>
+      <div class="dollarsPerVote">
+        <p>$62<br/><span>per vote</span></p>
+      </div>
+    </div>
+    <div class="rowWrapper">
+      <div class="headshotWrapper"><img src="http://data.baltimoresun.com/jin/dollars-per-vote/images/embry.png" class="headshot"/></div>
+      <div class="barsWrapper">
+        <p class="candidateName">Elizabeth Embry</p>
+        <div class="bars bars--embry">
+          <div class="bar bar--votes">
+            <p>500,000 votes</p>
+          </div>
+          <div class="bar bar--money">
+            <p>$0.4m</p>
+          </div>
+        </div>
+      </div>
+      <div class="dollarsPerVote">
+        <p>$62<br/><span>per vote</span></p>
+      </div>
+    </div>
+    <p class="disclaimer">* Includes the top five mayoral candidates with most votes</p>
+    <p class="disclaimer">** Campaign finance numbers do not include PAC funds</p>
+  </div>
+</div>
