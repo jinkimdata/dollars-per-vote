@@ -486,23 +486,24 @@ h1, h2, h3, h4, h5, h6 {
 p, a {
   font-family: "Source Sans Pro", sans-serif; }
 
-.container .barChart {
-  margin: 2em 0; }
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (max-width: 800px) {
+    .container {
+      width: 90%; } }
+  @media (max-width: 600px) {
+    .container {
+      width: 95%; } }
   .container .barChart .rowWrapper {
-    width: 80%;
-    height: 13em;
+    height: 11em;
     margin: 0 auto;
-    padding: 2em 0; }
-    @media (max-width: 800px) {
-      .container .barChart .rowWrapper {
-        width: 90%; } }
-    @media (max-width: 600px) {
-      .container .barChart .rowWrapper {
-        width: 95%; } }
+    padding: 1em 0; }
     .container .barChart .rowWrapper:first-child {
       padding: 0;
       height: 5em; }
-    .container .barChart .rowWrapper:nth-child(n+2):not(:last-child) {
+    .container .barChart .rowWrapper:nth-child(n+2):nth-child(-n+5) {
       border-bottom: 0.1em solid #667682; }
     .container .barChart .rowWrapper .headshotWrapper {
       display: inline-block;
@@ -525,7 +526,7 @@ p, a {
       width: 60%; }
       .container .barChart .rowWrapper .legend .legendItem {
         position: relative;
-        margin-bottom: .5em; }
+        margin-bottom: .2em; }
         .container .barChart .rowWrapper .legend .legendItem .bar {
           display: inline-block;
           width: 2em;
@@ -635,6 +636,8 @@ p, a {
         .container .barChart .rowWrapper .dollarsPerVote p span {
           font-size: .5em;
           line-height: .5em; }
+  .container .barChart p.disclaimer {
+    color: #667682; }
 
 /* Tophat */
 #tophat {
