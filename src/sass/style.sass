@@ -16,8 +16,8 @@ $accentc1: $red
 $bp1: 1200px
 $bp2: 1000px
 $bp3: 800px
-$bp4: 600px
-$bp5: 400px
+$bp4: 700px
+$bp5: 500px
 
 
 #appContainer.container
@@ -39,6 +39,9 @@ $bp5: 400px
 		font-family: $sspro
 	p, a
 		font-family: $sspro
+	p.disclaimer
+		font-style: italic
+		color: $accentg2
 	width: 100%
 	margin: 0 auto
 	.barChart
@@ -93,7 +96,7 @@ $bp5: 400px
 				@media(max-width: $bp4)
 					width: 70%
 				p.candidateName
-					width: 7em
+					width: 100%
 					margin: 0 1em 0 0
 					font-size: 2em
 					font-weight: bold
@@ -106,8 +109,10 @@ $bp5: 400px
 						p
 							@include verticalAlignMiddle(50%)
 							width: 100%
+							position: absolute
 							margin: 0
 							padding-right: .3em
+							line-height: 1em
 							text-align: right
 							font-size: 1em
 							font-weight: bold
@@ -116,24 +121,30 @@ $bp5: 400px
 							background-color: $accentc0
 						&--money
 							background-color: $accentc1
-					&--dixon
+					&--pugh
 						.bar							
 							&--votes
 								width: 100%
 							&--money
-								width: 38%
-					&--pugh
-						.bar							
-							&--votes
-								width: 70%
-							&--money
 								width: 46%
-					&--stokes
+					&--dixon
 						.bar							
 							&--votes
-								width: 60%
+								width: 94%
 							&--money
-								width: 13%
+								width: 38%
+					&--embry
+						.bar							
+							&--votes
+								width: 32%
+								p
+									@media(max-width: $bp4)
+										left: 6em
+										color: $accentg1
+									@media(max-width: $bp5)
+										width: 8em
+							&--money
+								width: 17%
 								p
 									@media(max-width: $bp4)
 										left: 3.5em
@@ -141,15 +152,25 @@ $bp5: 400px
 					&--warnock
 						.bar							
 							&--votes
-								width: 50%
+								width: 22%
+								p
+									@media(max-width: $bp4)
+										left: 6em
+										color: $accentg1
+									@media(max-width: $bp5)
+										width: 8em
 							&--money
 								width: 100%
-					&--embry
+					&--stokes
 						.bar							
 							&--votes
-								width: 40%
+								width: 9%
+								p
+									width: 6em
+									left: 3.5em
+									color: $accentg1
 							&--money
-								width: 17%
+								width: 13%
 								p
 									@media(max-width: $bp4)
 										left: 3.5em
@@ -176,6 +197,9 @@ $bp5: 400px
 						font-size: .5em
 						line-height: .5em
 		p.disclaimer
+			line-height: .5em
+			color: $accentg1
+		p.source
 			color: $accentg1
 /* Tophat */
 #tophat

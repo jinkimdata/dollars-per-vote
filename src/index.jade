@@ -6,6 +6,7 @@ link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?fa
 #appContainer.container
 	p.chatter Candidates for Baltimore mayor have easily spent more money than in previous election cycles. The top seven Democrats running for mayor combined to spend more than $5.6 million as of April 15, the most recent filing deadline for campaign finance reports. Early voting began April 14.
 	p.chatter Here’s a look at how the top five candidates’ vote totals compared to the amount they reported spending during the campaign.
+	p.disclaimer Last updated 8:24 a.m., April 27, 2016.
 	.barChart
 		.rowWrapper
 			.headshotWrapper
@@ -15,21 +16,7 @@ link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?fa
 					p Votes
 				.legendItem
 					.bar.bar--money
-					p Dollars spent
-		.rowWrapper
-			.headshotWrapper
-				img.headshot(src="#{datalink}images/dixon.png")
-			.barsWrapper
-				p.candidateName Sheila Dixon
-				.bars.bars--dixon
-					.bar.bar--votes
-						p 500,000 votes
-					.bar.bar--money
-						p $0.9m
-			.dollarsPerVote
-				p $62
-					br
-					span per vote
+					p Dollars spent*
 		.rowWrapper
 			.headshotWrapper
 				img.headshot(src="#{datalink}images/pugh.png")
@@ -37,39 +24,25 @@ link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?fa
 				p.candidateName Catherine Pugh
 				.bars.bars--pugh
 					.bar.bar--votes
-						p 500,000 votes
+						p 45,360 votes
 					.bar.bar--money
 						p $1.1m
 			.dollarsPerVote
-				p $62
+				p $25
 					br
 					span per vote
 		.rowWrapper
 			.headshotWrapper
-				img.headshot(src="#{datalink}images/stokes.png")
+				img.headshot(src="#{datalink}images/dixon.png")
 			.barsWrapper
-				p.candidateName Carl Stokes
-				.bars.bars--stokes
+				p.candidateName Sheila Dixon
+				.bars.bars--dixon
 					.bar.bar--votes
-						p 500,000 votes
+						p 42,484 votes
 					.bar.bar--money
-						p $0.3m
+						p $0.9m
 			.dollarsPerVote
-				p $62
-					br
-					span per vote
-		.rowWrapper
-			.headshotWrapper
-				img.headshot(src="#{datalink}images/warnock.png")
-			.barsWrapper
-				p.candidateName David Warnock
-				.bars.bars--warnock
-					.bar.bar--votes
-						p 500,000 votes
-					.bar.bar--money
-						p $2.4m
-			.dollarsPerVote
-				p $62
+				p $20
 					br
 					span per vote
 		.rowWrapper
@@ -79,12 +52,42 @@ link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?fa
 				p.candidateName Elizabeth Embry
 				.bars.bars--embry
 					.bar.bar--votes
-						p 500,000 votes
+						p 14,715 votes
 					.bar.bar--money
 						p $0.4m
 			.dollarsPerVote
-				p $62
+				p $27
 					br
 					span per vote
-		p.disclaimer * Includes the top five mayoral candidates with most votes
-		p.disclaimer ** Campaign finance numbers do not include PAC funds
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/warnock.png")
+			.barsWrapper
+				p.candidateName David Warnock
+				.bars.bars--warnock
+					.bar.bar--votes
+						p 10,094 votes
+					.bar.bar--money
+						p $2.4m
+			.dollarsPerVote
+				p $240
+					br
+					span per vote
+		.rowWrapper
+			.headshotWrapper
+				img.headshot(src="#{datalink}images/stokes.png")
+			.barsWrapper
+				p.candidateName Carl Stokes
+				.bars.bars--stokes
+					.bar.bar--votes
+						p 4,245 votes
+					.bar.bar--money
+						p $0.3m
+			.dollarsPerVote
+				p $73
+					br
+					span per vote
+		p.disclaimer *Numbers are rounded
+		p.disclaimer **Campaign finance numbers do not include PAC funds
+		p.disclaimer **Includes the top five mayoral candidates with most votes
+		p.source Source: Associated Press, Maryland State Board of Elections

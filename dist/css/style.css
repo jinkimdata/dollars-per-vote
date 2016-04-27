@@ -106,16 +106,19 @@
   @media (max-width: 800px) {
     #appContainer.container {
       font-size: 14px; } }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     #appContainer.container {
       font-size: 12px; } }
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     #appContainer.container {
       font-size: 12px; } }
   #appContainer.container h1, #appContainer.container h2, #appContainer.container h3, #appContainer.container h4, #appContainer.container h5, #appContainer.container h6 {
     font-family: "Source Sans Pro", sans-serif; }
   #appContainer.container p, #appContainer.container a {
     font-family: "Source Sans Pro", sans-serif; }
+  #appContainer.container p.disclaimer {
+    font-style: italic;
+    color: #cdcdcd; }
   #appContainer.container .barChart {
     max-width: 1200px; }
     #appContainer.container .barChart .rowWrapper {
@@ -140,7 +143,7 @@
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
           width: 100%; }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
           #appContainer.container .barChart .rowWrapper .headshotWrapper {
             display: none; } }
       #appContainer.container .barChart .rowWrapper .legend {
@@ -174,11 +177,11 @@
         vertical-align: top;
         width: 60%;
         height: 100%; }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
           #appContainer.container .barChart .rowWrapper .barsWrapper {
             width: 70%; } }
         #appContainer.container .barChart .rowWrapper .barsWrapper p.candidateName {
-          width: 7em;
+          width: 100%;
           margin: 0 1em 0 0;
           font-size: 2em;
           font-weight: bold;
@@ -194,8 +197,10 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             width: 100%;
+            position: absolute;
             margin: 0;
             padding-right: .3em;
+            line-height: 1em;
             text-align: right;
             font-size: 1em;
             font-weight: bold;
@@ -204,32 +209,50 @@
             background-color: #2E98CC; }
           #appContainer.container .barChart .rowWrapper .barsWrapper .bars .bar--money {
             background-color: #ED4227; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--votes {
-          width: 100%; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--money {
-          width: 38%; }
         #appContainer.container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--votes {
-          width: 70%; }
+          width: 100%; }
         #appContainer.container .barChart .rowWrapper .barsWrapper .bars--pugh .bar--money {
           width: 46%; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--votes {
-          width: 60%; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money {
-          width: 13%; }
-          @media (max-width: 600px) {
-            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money p {
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--votes {
+          width: 94%; }
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--dixon .bar--money {
+          width: 38%; }
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes {
+          width: 32%; }
+          @media (max-width: 700px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes p {
+              left: 6em;
+              color: #667682; } }
+          @media (max-width: 500px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes p {
+              width: 8em; } }
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money {
+          width: 17%; }
+          @media (max-width: 700px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money p {
               left: 3.5em;
               color: #667682; } }
         #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--votes {
-          width: 50%; }
+          width: 22%; }
+          @media (max-width: 700px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--votes p {
+              left: 6em;
+              color: #667682; } }
+          @media (max-width: 500px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--votes p {
+              width: 8em; } }
         #appContainer.container .barChart .rowWrapper .barsWrapper .bars--warnock .bar--money {
           width: 100%; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--votes {
-          width: 40%; }
-        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money {
-          width: 17%; }
-          @media (max-width: 600px) {
-            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--embry .bar--money p {
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--votes {
+          width: 9%; }
+          #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--votes p {
+            width: 6em;
+            left: 3.5em;
+            color: #667682; }
+        #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money {
+          width: 13%; }
+          @media (max-width: 700px) {
+            #appContainer.container .barChart .rowWrapper .barsWrapper .bars--stokes .bar--money p {
               left: 3.5em;
               color: #667682; } }
       #appContainer.container .barChart .rowWrapper .dollarsPerVote {
@@ -239,7 +262,7 @@
         margin: 0 auto;
         width: 20%;
         height: 100%; }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
           #appContainer.container .barChart .rowWrapper .dollarsPerVote {
             width: 25%; } }
         #appContainer.container .barChart .rowWrapper .dollarsPerVote p {
@@ -259,6 +282,9 @@
             font-size: .5em;
             line-height: .5em; }
     #appContainer.container .barChart p.disclaimer {
+      line-height: .5em;
+      color: #667682; }
+    #appContainer.container .barChart p.source {
       color: #667682; }
 
 /* Tophat */
